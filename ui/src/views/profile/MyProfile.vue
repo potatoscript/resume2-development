@@ -23,7 +23,7 @@
             <span class="input-group-text" style="width: 100px">{{
               $t("message.Age")
             }}</span>
-            <span class="form-control">{{ $t("profile.MyAge") }}</span>
+            <span class="form-control">45</span>
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text" style="width: 100px">{{
@@ -33,9 +33,10 @@
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text" style="width: 100px">{{
-              $t("message.MyEmail")
+              $t("message.Email")
             }}</span>
-            <span class="form-control">{{ $t("profile.MyEmail") }}</span>
+            <span class="form-control">limksmail@yahoo.co.jp</span
+            ><!--@cannot be used inside locale file-->
           </div>
         </td>
       </tr>
