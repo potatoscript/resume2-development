@@ -1,7 +1,7 @@
 <template>
   <!-- Tabs content -->
   <div class="container mt-3">
-    <h5>■ {{ $t("profile.PersonalInfo") }}</h5>
+    <h5>■ {{ $t("message.Education") }}</h5>
     <table>
       <tr>
         <td style="vertical-align: top" class="px-3">
@@ -57,13 +57,6 @@
   <!-- Tabs content -->
 </template>
 <script>
-export default {
-  methods: {
-    pop() {
-      document.getElementById("imagemodal").style.display = "block";
-      //$("#imagemodal").modal("show"); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
-    },
-  },
-};
+export default {};
 </script>
 <style scoped></style>

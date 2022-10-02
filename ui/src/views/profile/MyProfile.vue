@@ -33,9 +33,9 @@
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text" style="width: 100px">{{
-              $t("message.Email")
+              $t("message.MyEmail")
             }}</span>
-            <span class="form-control">{{ $t("profile.Email") }}</span>
+            <span class="form-control">{{ $t("profile.MyEmail") }}</span>
           </div>
         </td>
       </tr>
@@ -44,7 +44,3 @@
   </div>
   <!-- Tabs content -->
 </template>
-<script>
-export default {};
-</script>
-<style scoped></style>
