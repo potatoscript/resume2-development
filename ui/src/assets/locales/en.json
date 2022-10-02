@@ -2,7 +2,7 @@
     "message":{
         "MyCV": "Experience",
         "MySkills": "Skills",
-        "MyYearExperience" : "(IT Full Stack Developer = 10+ Years Experience)",
+        "MyYearExperience" : "(10+ Years Experience Full Stack Developer)",
         "Profile":"Profile",
         "Education" : "Education",
         "English" : "English",
@@ -15,7 +15,16 @@
         "University":"University",
         "Address":"Address",
         "Course":"Specialized",
-        "Period":"Period"
+        "Period":"Period",
+        "Year":"Year",
+        "Company":"Company",
+        "Location":"Location",
+        "JobScope":"Job Scope",
+        "Outcome":"Outcome",
+        "Tools":"Tools",
+        "Hobby":"Hobby",
+        "Remark":"Remark",
+        "Experiences":"Experiences"
     },
     "profile":{
         "PersonalInfo":"Personal Info",
@@ -70,6 +79,13 @@
         "JobScope6":"JobScope",
         "Outcome6":"Outcome",
         "Tools6":"Tools"
+    },
+    "hobby":{
+        "1":"Learning new thing（Android、Python…）",
+        "2":"Swimming、water-color drawing"
+    },
+    "skill":{
+        "remark":"◎：Over one years ／ ○：less than a year ／ △：less than a month"
     }
     
 }

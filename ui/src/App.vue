@@ -19,13 +19,13 @@
           <router-link
             class="btn btn-light btn-outline-primary m-1 mx-3"
             to="/"
-            >{{ $t("message.MyCV") }}</router-link
+            >{{ $t("message.Profile") }}</router-link
           >
         </li>
         <li class="nav-item m-1">
           <router-link
             class="btn btn-light btn-outline-primary"
-            :to="{ name: 'employee' }"
+            :to="{ name: 'skill' }"
             >{{ $t("message.MySkills") }}</router-link
           >
         </li>

@@ -1,7 +1,7 @@
 <template>
   <!-- Tabs content -->
   <div class="container mt-3">
-    <h5>■ {{ $t("profile.PersonalInfo") }}</h5>
+    <h5 class="display-7">■ {{ $t("profile.PersonalInfo") }}</h5>
     <table>
       <tr>
         <td style="vertical-align: top" class="px-3">
@@ -42,6 +42,14 @@
       </tr>
     </table>
     <h7 class="display-8">{{ $t("profile.Other") }}</h7>
+    <br />
+    <hr />
+    <div>
+      <h5 class="display-7">■ {{ $t("message.Hobby") }}</h5>
+      <h7 class="display-8 ml-5">- {{ $t("hobby.1") }}</h7
+      ><br />
+      <h7 class="display-8 ml-5">- {{ $t("hobby.2") }}</h7>
+    </div>
   </div>
   <!-- Tabs content -->
 </template>

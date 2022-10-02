@@ -7,9 +7,9 @@ const routes = [
     component: ProfileView
   },
   {
-    path: '/employee',
-    name: 'employee',
-    component: () => import('../views/EmployeeView.vue')
+    path: '/skill',
+    name: 'skill',
+    component: () => import('../views/SkillView.vue')
   }
 ]
 

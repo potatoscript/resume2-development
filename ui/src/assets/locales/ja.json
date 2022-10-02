@@ -2,7 +2,7 @@
     "message":{
         "MyCV": "職務経歴",
         "MySkills": "ｽｷﾙｼｰﾄ",
-        "MyYearExperience" : "(ITフルスタック開発者 = 経験年数 10+)",
+        "MyYearExperience" : "(経験年数 10+フルスタック開発者)",
         "Profile":"基本情報",
         "Education":"最終学歴",
         "English" : "English",
@@ -21,7 +21,10 @@
         "Location":"拠点",
         "JobScope":"業務",
         "Outcome":"成果",
-        "Tools":"ツール"
+        "Tools":"ツール",
+        "Hobby":"趣味",
+        "Remark":"備考",
+        "Experiences":"経験"
     },
     "profile":{
         "PersonalInfo":"基本情報",
@@ -76,5 +79,12 @@
         "JobScope6":"業務",
         "Outcome6":"成果",
         "Tools6":"ツール"
+    },
+    "hobby":{
+        "1":"新し技術を学ぶ（Android、Python（機械学習）等）",
+        "2":"水泳、水彩画、漫画"
+    },
+    "skill":{
+        "remark":"◎：実務経験多い ／ ○：実務経験有り ／ △：知識有り"
     }
 }
