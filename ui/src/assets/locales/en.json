@@ -24,7 +24,9 @@
         "Tools":"Tools",
         "Hobby":"Hobby",
         "Remark":"Remark",
-        "Experiences":"Experiences"
+        "Experiences":"Experiences",
+        "Language":"Language",
+        "Resume":"Resume.pdf"
     },
     "profile":{
         "PersonalInfo":"Personal Info",

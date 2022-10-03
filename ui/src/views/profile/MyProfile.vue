@@ -39,6 +39,9 @@
             ><!--@cannot be used inside locale file-->
           </div>
         </td>
+        <td style="vertical-align: top" class="px-3">
+          <canvas id="locationChart" width="250" height="180"></canvas>
+        </td>
       </tr>
     </table>
     <h7 class="display-8">{{ $t("profile.Other") }}</h7>
@@ -53,3 +56,72 @@
   </div>
   <!-- Tabs content -->
 </template>
+<script>
+// chart library
+import Chart from "chart.js/auto";
+import ChartDataLabels from "chartjs-plugin-datalabels";
+
+export default {
+  mounted: function () {
+    this.doughnutLocation();
+  },
+  methods: {
+    doughnutLocation() {
+      var chartColors = [
+        "rgb(255, 99, 132)",
+        "rgb(255, 159, 64)",
+        "rgb(255, 205, 86)",
+        "rgb(75, 192, 192)",
+        "rgb(54, 162, 235)",
+        "rgb(153, 102, 255)",
+        "rgb(201, 203, 207)",
+      ];
+      var config = {
+        type: "doughnut",
+        data: {
+          datasets: [
+            {
+              data: [20, 3, 7, 2, 13],
+              backgroundColor: chartColors,
+              label: "Dataset 1",
+            },
+          ],
+          labels: ["ﾏﾚｰｼｱ", "ｲｷﾞﾘｽ", "ｼﾝｶﾞﾎﾟｰﾙ", "ﾀｲ", "日本"],
+        },
+        options: {
+          responsive: true,
+          legends: {
+            display: false,
+            position: "bottom",
+          },
+          title: {
+            display: false,
+            text: "在住年数",
+          },
+          animation: {
+            animateScale: true,
+            animateRotate: true,
+          },
+          plugins: {
+            ////by adding the plugin chartjs-plugin-labels.js
+            labels: {
+              render: function (args) {
+                return args.label + " " + args.value + "年";
+              },
+              arc: false,
+              fontSize: 12,
+              fontColor: "blue",
+              position: "outside",
+            },
+          },
+        },
+      };
+      Chart.register(ChartDataLabels);
+      var ctx = document.getElementById("locationChart").getContext("2d");
+
+      var locationChart = new Chart(ctx, config);
+      locationChart;
+    },
+  },
+};
+</script>

@@ -16,18 +16,23 @@
           </h4>
         </li>
         <li class="nav-item">
+          <router-link class="btn btn-light btn-outline-primary m-1" to="/">{{
+            $t("message.Profile")
+          }}</router-link>
           <router-link
-            class="btn btn-light btn-outline-primary m-1 mx-3"
-            to="/"
-            >{{ $t("message.Profile") }}</router-link
-          >
-        </li>
-        <li class="nav-item m-1">
-          <router-link
-            class="btn btn-light btn-outline-primary"
+            class="btn btn-light btn-outline-primary m-1"
             :to="{ name: 'skill' }"
             >{{ $t("message.MySkills") }}</router-link
           >
+        </li>
+        <li class="nav-item">
+          <button
+            type="button"
+            @click="this.DownloadResume"
+            class="btn btn-info"
+          >
+            {{ $t("message.Resume") }}
+          </button>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto">
@@ -61,7 +66,26 @@
   </div>
 </template>
 <script>
-export default {};
+import axios from "axios";
+export default {
+  methods: {
+    DownloadResume() {
+      axios({
+        url: "assets/" + this.$t("message.Resume"), // File URL Goes Here
+        method: "GET",
+        responseType: "blob",
+      }).then((res) => {
+        var FILE = window.URL.createObjectURL(new Blob([res.data]));
+
+        var docUrl = document.createElement("x");
+        docUrl.href = FILE;
+        docUrl.setAttribute("download", "file.pdf");
+        document.body.appendChild(docUrl);
+        docUrl.click();
+      });
+    },
+  },
+};
 </script>
 
 <style>

@@ -24,7 +24,9 @@
         "Tools":"ツール",
         "Hobby":"趣味",
         "Remark":"備考",
-        "Experiences":"経験"
+        "Experiences":"経験",
+        "Language":"言語",
+        "Resume":"履歴書.pdf"
     },
     "profile":{
         "PersonalInfo":"基本情報",
