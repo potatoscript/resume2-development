@@ -65,47 +65,206 @@
         "EducationOther":"Graduated with First class honor, with my earlier project in algorithm software development to find out the natural frequency from vibration data set using combination of MathLab programming language as base."
     },
     "job":{
-        "Company1":"NAC(NOK ASIA Company Singapore)",
         "Location1":"Singapore",
-        "Period1":"2000-04 – 2004-12",
-        "JobScope1":"Oil Seal Product Design & Dev・Oil Seal Process Design・Oil Seal Production Cost Analysis",
-        "Outcome1":"Prepared over 100 2D drawings and 3D models for new and existing product・Implemented a new drawing system with VBA, cutting drawing time by 50%・Successfully resolved over 100 issues in production process ",
-        "Tools1":"AutoCAD ・Inventor・VBA",
+        "Company1":{
+            "1":"NAC",
+            "2":"(NOK ASIA Company Singapore)"
+        },
+        "Location1":"シンガポール",
+        "Period1":{
+            "1":"2000-APR",
+            "2":"to",
+            "3":"2004-DEC"
+        },
+        "JobScope1":{
+            "1":"・Oil Seal Product Design & Dev",
+            "2":"・Oil Seal Process Design",
+            "3":"・Oil Seal Production Cost Analysis"
+        },
+        "Outcome1":{
+            "1":"・Prepared over 100 2D drawings and 3D models for new and existing product",
+            "2":"・Implemented a new drawing system with VBA, cutting drawing time by 50%",
+            "3":"・Successfully resolved over 100 issues in production process"
+        },
+        "Tools1":{
+            "1":"・AutoCAD",
+            "2":"・Inventor",
+            "3":"・VBA",
+            "4":"・MS Offices"
+        },
 
-        "Company2":"NVC(NOK TOttori Division)",
+        "Company2":{
+            "1":"NVC",
+            "2":"(NOK TOttori Division)"
+        },
         "Location2":"Japan(Tottori)",
-        "Period2":"2005-01 – 2007-12",
-        "JobScope2":"Damper Product Design・Damper Process Design・Damper Quality Test",
-        "Outcome2":"Prepared over 20 2D drawings and 3D models for new and existing product・Hand on vulcanization process and prepared work process for it・Performed 100 over test on the product static and dynamic properties.",
-        "Tools2":"SolidWork",
+        "Period2":{
+            "1":"2005-JAN",
+            "2":"to",
+            "3":"2007-DEC"
+        },
+        "JobScope2":{
+            "1":"・Damper Product Design",
+            "2":"・Damper Process Design",
+            "3":"・Damper Quality Test"
+        },
+        "Outcome2":{
+            "1":"・Prepared over 20 2D drawings and 3D models for new and existing product",
+            "2":"・Hand on vulcanization process and prepared work process for it",
+            "3":"・Performed 100 over test on the product static and dynamic properties."
+        },
+        "Tools2":{
+            "1":"・SolidWork",
+            "2":"・MS Offices"
+        },
 
-        "Company3":"TNC(Thai NOK Company)",
+        "Company3":{
+            "1":"TNC",
+            "2":"(Thai NOK Company)"
+        },
         "Location3":"Thailand",
-        "Period3":"2008-01 – 2010-05",
-        "JobScope3":"JobScope",
-        "Outcome3":"Outcome",
-        "Tools3":"Tools",
+        "Period3":{
+            "1":"2008-JAN",
+            "2":"to",
+            "3":"2010-MAY"
+        },
+        "JobScope3":{
+            "1":"・Damper production cost down project manager",
+            "2":"・Design the automation for the production process",
+            "3":"・Product design education"
+        },
+        "Outcome3":{
+            "1":"・Successfully reduced the production cost by 20% via the process automation",
+            "2":"  which cut down the man power in the process",
+            "3":"・Trained over 10 local engineer on the design of the product"
+        },
+        "Tools3":{
+            "1":"・AutoCAD",
+            "2":"・Inventor",
+            "3":"・VBA",
+            "4":"・MS Offices"
+        },
 
-        "Company4":"NVC(NOK TOttori Division)",
+        "Company4":{
+            "1":"NVC",
+            "2":"(NOK TOttori Division)"
+        },
         "Location4":"Japan(Tottori)",
-        "Period4":"2010-06 – 2020-03",
-        "JobScope4":"JobScope",
-        "Outcome4":"Outcome",
-        "Tools4":"Tools",
+        "Period4":{
+            "1":"2010-JUN",
+            "2":"to",
+            "3":"2011-MAR"
+        },
+        "JobScope4":{
+            "1":"・Design the Production tooling (Jig and Mold) ",
+            "2":"・Perform the testing on the tooling before go down for production",
+            "3":"・Production Cost Down Project"
+        },
+        "Outcome4":{
+            "1":"・Prepared over 30 pieces of 2D Drawing 3D model of the tooling",
+            "2":"・Create a database system to store and manage the tooling information"
+        },
+        "Tools4":{
+            "1":"・Solid Work",
+            "2":"・JavaScript",
+            "3":"・HTML, CSS",
+            "4":"・PHP, PostgreSQL",
+            "5":"・MS Offices"
+        },
 
-        "Company5":"NAB(NOK ASIA BATAM Indonesia)",
-        "Location5":"Indonesia",
-        "Period5":"2020-04 – 2022-05",
-        "JobScope5":"JobScope",
-        "Outcome5":"Outcome",
-        "Tools5":"Tools",
+        "Company5":{
+            "1":"NVC",
+            "2":"(NOK TOttori Division)"
+        },
+        "Location5":"Japan(Tottori)",
+        "Period5":{
+            "1":"2011-APR",
+            "2":"to",
+            "3":"2020-MAR"
+        },
+        "JobScope5":{
+            "1":"・Maintaining the tooling system",
+            "2":"・Create and maintain the other production system",
+            "3":"・Work together with the IT department to support the need of the production system"
+        },
+        "Outcome5":{
+            "1":"・Created 10 over system to support the management on the information flow in the production",
+            "2": "like dashboard of daily production progress, tooling status, ",
+            "3": "defective status, man power and machine performance tracking system and so on",
+            "4": "・By the importing of the third party library like chart.js and jQuery.js",
+            "5": "the production input data was able to present in the beautiful chart format in the dashboard"},
+        "Tools5":{
+            "1":"・Solid Work",
+            "2":"・JavaScript",
+            "3":"・HTML, CSS",
+            "4":"・C#(from 2015)",
+            "5":"・PHP, PostgreSQL",
+            "6":"・Apache",
+            "7":"・MS Offices"
+        },
 
-        "Company6":"System IT Company",
-        "Location6":"Japan(Tokyo)",
-        "Period6":"2022-06 – now",
-        "JobScope6":"JobScope",
-        "Outcome6":"Outcome",
-        "Tools6":"Tools"
+        "Company6":{
+            "1":"NAB",
+            "2":"(NOK ASIA BATAM Indonesia)"
+        },
+        "Location6":"Indonesia",
+        "Period6":{
+            "1":"2020-APR",
+            "2":"to",
+            "3":"2022-MAY"
+        },
+        "JobScope6":{
+            "1":"・Create and Maintain the production system",
+            "2":"・Educate the local system engineer on C# and asp.net core MVC framework development skill"
+        },
+        "Outcome6":{
+            "1":"・Created 3 system ",
+            "2":"  - Production Cost Estimation System",
+            "3":"  - Project Scheduling Management System",
+            "4":"  - Production Information Management System ",
+            "5":"・Educated one local system engineer on C# language"
+        },
+        "Tools6":{
+            "1":"・ASP.NET CORE MVC",
+            "2":"・JavaScript",
+            "3":"・HTML, CSS",
+            "4":"・C#",
+            "5":"・PostgreSQL",
+            "6":"・IIS",
+            "7":"・GIT",
+            "8":"・MS Offices"
+        },
+
+        "Company7":{
+            "1":"IT System Company",
+            "2":"(New Company)"
+        },
+        "Location7":"Japan(Tokyo)",
+        "Period7":{
+            "1":"2022-JUN",
+            "2":"to",
+            "3":"Now"
+        },
+        "JobScope7":{
+            "1":"・Maintaining the Hospital information management system",
+            "2":""
+        },
+        "Outcome7":{
+            "1":" "
+        },
+        "Tools7":{
+            "1":"・ASP.NET CORE MVC",
+            "2":"・JavaScript(Vue.js)",
+            "3":"・HTML, CSS",
+            "4":"・PostgreSQL",
+            "5":"・BitBucket（code Version control ）",
+            "6":"・JIRA（work control）",
+            "7":"・Vuetify.js",
+            "8":"・Confluence",
+            "9":"・Azure・Docker",
+            "10":"・GIT",
+            "11":"・MS Offices"
+        }
     },
     "hobby":{
         "1":"Learning new thing（Android、Python…）",

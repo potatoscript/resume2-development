@@ -65,47 +65,205 @@
         "EducationOther":"卒業プロジェクト：MATHLAB言語で振動データから固有振動数を検出のシステムを開発する。（MATHLABは最初に使ったプログラミング言語です。）"
     },
     "job":{
-        "Company1":"NAC（ＮＯＫアジア株式会社）",
+        "Company1":{
+            "1":"NAC",
+            "2":"(NOKアジア株式会社)"
+        },
         "Location1":"シンガポール",
-        "Period1":"2000年4月～2004年",
-        "JobScope1":"・製品設計・開発、製造工程設計・改善、原価削減プロジェクト",
-        "Outcome1":"成果",  
-        "Tools1":"・AutoCAD ・Inventor・VBA",
+        "Period1":{
+            "1":"2000年4月",
+            "2":"～",
+            "3":"2004年12月"
+        },
+        "JobScope1":{
+            "1":"・製品設計・開発",
+            "2":"・製造工程設計・改善",
+            "3":"・原価削減プロジェクト"
+        },
+        "Outcome1":{
+            "1":"・新規と既存の製品（１００件以上）２Ⅾ図面と３Ⅾモデルを作成しました",
+            "2":"・VBAを使用して図面作成管理システムを実装し、図面作成時間を50%削減",
+            "3":"・生産プロセスで100件以上の問題を解決しました"
+        },
+        "Tools1":{
+            "1":"・AutoCAD",
+            "2":"・Inventor",
+            "3":"・VBA",
+            "4":"・MS Offices"
+        },
 
-        "Company2":"NVC(ＮＯＫ鳥取事業場)",
+        "Company2":{
+            "1":"NVC",
+            "2":"(NOK鳥取事業場)"
+        },
         "Location2":"日本（鳥取県）",
-        "Period2":"2005年～2007年",
-        "JobScope2":"業務",
-        "Outcome2":"成果",
-        "Tools2":"ツール",
+        "Period2":{
+            "1":"2005年1月",
+            "2":"～",
+            "3":"2007年12月"
+        },
+        "JobScope2":{
+            "1":"・ダンパー製品設計",
+            "2":"・ダンパー生産工程設計",
+            "3":"・ダンパー生産品質テスト"
+        },
+        "Outcome2":{
+            "1":"・新規と既存の製品（２０件以上）２Ⅾ図面と３Ⅾモデルを作成しました",
+            "2":"・加硫工程の実施とそのための作業工程の準備",
+            "3":"・製品の静と動特性を実施しました（５０件）"
+        },
+        "Tools2":{
+            "1":"・SolidWork",
+            "2":"・MS Offices"
+        },
 
-        "Company3":"TNC(ＮＯＫタイ事業場)",
+        "Company3":{
+            "1":"TNC",
+            "2":"(NOKタイ事業場)"
+        },
         "Location3":"タイ",
-        "Period3":"2008年～2010年4月",
-        "JobScope3":"業務",
-        "Outcome3":"成果",
-        "Tools3":"ツール",
+        "Period3":{
+            "1":"2008年1月",
+            "2":"～",
+            "3":"2010年5月"
+        },
+        "JobScope3":{
+            "1":"・ダンパー製作原価削減活動プロジェクトマネージャー",
+            "2":"・生産プロセスの自動化を設計・計画",
+            "3":"・製品設計・図面作成の教育等"
+        },
+        "Outcome3":{
+            "1":"・工程自動化により、生産コストを20%削減することに成功",
+            "2":"  工程内の人件費を削減することができました。",
+            "3":"・製品の設計を10人以上のローカルエンジニアに教育した"
+        },
+        "Tools3":{
+            "1":"・AutoCAD",
+            "2":"・Inventor",
+            "3":"・VBA",
+            "4":"・MS Offices"
+        },
 
-        "Company4":"NVC(ＮＯＫ鳥取事業場)",
+        "Company4":{
+            "1":"NVC",
+            "2":"(NOK鳥取事業場)"
+        },
         "Location4":"日本（鳥取県）",
-        "Period4":"2010年6月～2020年3月",
-        "JobScope4":"業務",
-        "Outcome4":"成果",
-        "Tools4":"ツール",
+        "Period4":{
+            "1":"2010年6月",
+            "2":"～",
+            "3":"2011年3月"
+        },
+        "JobScope4":{
+            "1":"・生産金型（治具・金型）の設計",
+            "2":"・本番環境に移行する前にの事前準備作業",
+            "3":"・原価削減活動"
+        },
+        "Outcome4":{
+            "1":"・新規と既存の治工具（３０件以上）２Ⅾ図面と３Ⅾモデルを作成しました",
+            "2":"・製造情報管理システムを作成しました"
+        },
+        "Tools4":{
+            "1":"・Solid Work",
+            "2":"・JavaScript",
+            "3":"・HTML, CSS",
+            "4":"・PHP, PostgreSQL",
+            "5":"・MS Offices"
+        },
 
-        "Company5":"NAB(ＮＯＫアジアインドネシア株式会社)",
-        "Location5":"インドネシア",
-        "Period5":"2020年4月～2022年5月",
-        "JobScope5":"業務",
-        "Outcome5":"成果",
-        "Tools5":"ツール",
+        "Company5":{
+            "1":"NVC",
+            "2":"(NOK鳥取事業場)"
+        },
+        "Location5":"日本（鳥取県）",
+        "Period5":{
+            "1":"2011年4月",
+            "2":"～",
+            "3":"2020年3月"
+        },
+        "JobScope5":{
+            "1":"・製造情報管理システムを維持・メンテナンス",
+            "2":"・新規システムを開発する",
+            "3":"・IT部門と協力して、生産システムをサポート"
+        },
+        "Outcome5":{
+            "1":"・Created 10 over system to support the management on the information flow in the production",
+            "2": "like dashboard of daily production progress, tooling status, ",
+            "3": "defective status, man power and machine performance tracking system and so on",
+            "4": "・By the importing of the third party library like chart.js and jQuery.js",
+            "5": "the production input data was able to present in the beautiful chart format in the dashboard"},
+        "Tools5":{
+            "1":"・Solid Work",
+            "2":"・JavaScript",
+            "3":"・HTML, CSS",
+            "4":"・C#(from 2015)",
+            "5":"・PHP, PostgreSQL",
+            "6":"・Apache",
+            "7":"・MS Offices"
+        },
 
-        "Company6":"System IT Company",
-        "Location6":"日本(東京)",
-        "Period6":"2022年6月～",
-        "JobScope6":"業務",
-        "Outcome6":"成果",
-        "Tools6":"ツール"
+        "Company6":{
+            "1":"NAB",
+            "2":"(NOKアジアインドネシア株式会社)"
+        },
+        "Location6":"インドネシア",
+        "Period6":{
+            "1":"2020年4月",
+            "2":"～",
+            "3":"2022年5月"
+        },
+        "JobScope6":{
+            "1":"・Create and Maintain the production system",
+            "2":"・Educate the local system engineer on C# and asp.net core MVC framework development skill"
+        },
+        "Outcome6":{
+            "1":"・Created 3 system ",
+            "2":"  - Production Cost Estimation System",
+            "3":"  - Project Scheduling Management System",
+            "4":"  - Production Information Management System ",
+            "5":"・Educated one local system engineer on C# language"
+        },
+        "Tools6":{
+            "1":"・ASP.NET CORE MVC",
+            "2":"・JavaScript",
+            "3":"・HTML, CSS",
+            "4":"・C#",
+            "5":"・PostgreSQL",
+            "6":"・IIS",
+            "7":"・GIT",
+            "8":"・MS Offices"
+        },
+
+        "Company7":{
+            "1":"IT System Company",
+            "2":"(New Company)"
+        },
+        "Location7":"日本(東京)",
+        "Period7":{
+            "1":"2022年6月",
+            "2":"～",
+            "3":""
+        },
+        "JobScope7":{
+            "1":"・Maintaining the Hospital information management system",
+            "2":""
+        },
+        "Outcome7":{
+            "1":" "
+        },
+        "Tools7":{
+            "1":"・ASP.NET CORE MVC",
+            "2":"・JavaScript(Vue.js)",
+            "3":"・HTML, CSS",
+            "4":"・PostgreSQL",
+            "5":"・BitBucket（code Version control ）",
+            "6":"・JIRA（work control）",
+            "7":"・Vuetify.js",
+            "8":"・Confluence",
+            "9":"・Azure・Docker",
+            "10":"・GIT",
+            "11":"・MS Offices"
+        }
     },
     "hobby":{
         "1":"新し技術を学ぶ（Android、Python（機械学習）等）",
