@@ -8,7 +8,7 @@ import ja from "./assets/locales/ja.json";
 import en from "./assets/locales/en.json";
 
 export const i18n = createI18n({
-  locale: "en",
+  locale: "ja",
   messages: {
     en: en,
     ja: ja

@@ -40,7 +40,7 @@
           </div>
         </td>
         <td style="vertical-align: top" class="px-3">
-          <canvas id="locationChart" width="250" height="180"></canvas>
+          <canvas id="locationChart" width="300" height="200"></canvas>
         </td>
       </tr>
     </table>
@@ -76,37 +76,58 @@ export default {
         "rgb(153, 102, 255)",
         "rgb(201, 203, 207)",
       ];
+      var data = [20, 3, 7, 2, 13];
       var config = {
         type: "doughnut",
         data: {
           datasets: [
             {
-              data: [20, 3, 7, 2, 13],
+              data: data,
               backgroundColor: chartColors,
               label: "Dataset 1",
             },
           ],
-          labels: ["ﾏﾚｰｼｱ", "ｲｷﾞﾘｽ", "ｼﾝｶﾞﾎﾟｰﾙ", "ﾀｲ", "日本"],
+          labels: [
+            this.$t("country.Malaysia") +
+              " (" +
+              data[0] +
+              this.$t("message.Year") +
+              ")",
+            this.$t("country.England") +
+              " (" +
+              data[1] +
+              this.$t("message.Year") +
+              ")",
+            this.$t("country.Singapore") +
+              " (" +
+              data[2] +
+              this.$t("message.Year") +
+              ")",
+            this.$t("country.Thailand") +
+              " (" +
+              data[3] +
+              this.$t("message.Year") +
+              ")",
+            this.$t("country.Japan") +
+              " (" +
+              data[4] +
+              this.$t("message.Year") +
+              ")",
+          ],
         },
         options: {
           responsive: true,
-          legends: {
-            display: false,
-            position: "bottom",
-          },
-          title: {
-            display: false,
-            text: "在住年数",
-          },
-          animation: {
-            animateScale: true,
-            animateRotate: true,
-          },
           plugins: {
-            ////by adding the plugin chartjs-plugin-labels.js
-            labels: {
+            legend: {
+              position: "right",
+            },
+            title: {
+              display: true,
+              text: this.$t("country.YearOfLiving"),
+            },
+            label: {
               render: function (args) {
-                return args.label + " " + args.value + "年";
+                return args.label + " " + args.value + this.$t("message.Year");
               },
               arc: false,
               fontSize: 12,

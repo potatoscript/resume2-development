@@ -1,5 +1,8 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-  publicPath : '/resume2/'
+  publicPath : '/resume2/',
+  devServer: {
+    proxy: 'https://github.com'
+  }
 })

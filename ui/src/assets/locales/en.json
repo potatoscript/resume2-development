@@ -26,7 +26,32 @@
         "Remark":"Remark",
         "Experiences":"Experiences",
         "Language":"Language",
-        "Resume":"Resume.pdf"
+        "Resume":"Resume.pdf",
+        "EnglishResume":"Resume.pdf",
+        "JapaneseResume":"履歴書.pdf"
+    },
+    "language":{
+        "English":"English",
+        "Chinese":"Chinese",
+        "Japanese":"Japanese",
+        "Malay":"Malay",
+        "Speak":"Speakig",
+        "Write":"Writing",
+        "Read":"Reading",
+        "Typing":"Typing",
+        "Listen":"Listening",
+        "EnglishLabel":"English (Daily conversation level TOIEC 820)",
+        "ChineseLabel":"Chinese (Daily conversation level)",
+        "JapaneseLabel":"Japanese (Daily conversation level N2)",
+        "MalayLabel":"Malay (Daily conversation level)"
+    },
+    "country":{
+        "YearOfLiving":"Year Of Living",
+        "Malaysia":"Malaysia",
+        "Singapore":"Singapore",
+        "England":"England",
+        "Japan":"Japan",
+        "Thailand":"Thailand"
     },
     "profile":{
         "PersonalInfo":"Personal Info",
@@ -87,7 +112,7 @@
         "2":"Swimming、water-color drawing"
     },
     "skill":{
-        "remark":"◎：Over one years ／ ○：less than a year ／ △：less than a month"
+        "remark":"◎：Advance ／ ○：Intermediate ／ △：Beginner"
     }
     
 }

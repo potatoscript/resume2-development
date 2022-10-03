@@ -26,7 +26,32 @@
         "Remark":"備考",
         "Experiences":"経験",
         "Language":"言語",
-        "Resume":"履歴書.pdf"
+        "Resume":"履歴書.pdf",
+        "EnglishResume":"Resume.pdf",
+        "JapaneseResume":"履歴書.pdf"
+    },
+    "language":{
+        "English":"英語語",
+        "Chinese":"中国語",
+        "Japanese":"日本語",
+        "Malay":"マレー語",
+        "Speak":"会話",
+        "Write":"書く",
+        "Read":"読む",
+        "Typing":"タイピング",
+        "Listen":"聞く",
+        "EnglishLabel":"英語 (日常会話レベル TOIEC 820)",
+        "ChineseLabel":"中国語 (日常会話レベル)",
+        "JapaneseLabel":"日本語 (日常会話レベル N2)",
+        "MalayLabel":"マレーシア語 (日常会話レベル)"
+    },
+    "country":{
+        "YearOfLiving":"在住年数",
+        "Malaysia":"ﾏﾚｰｼｱ",
+        "Singapore":"ｼﾝｶﾞﾎﾟｰﾙ",
+        "England":"ｲｷﾞﾘｽ",
+        "Japan":"日本",
+        "Thailand":"ﾀｲ"
     },
     "profile":{
         "PersonalInfo":"基本情報",

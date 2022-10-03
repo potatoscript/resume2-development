@@ -1,38 +1,53 @@
 <template>
-  <div class="p-3 container-fluid">
-    <nav class="navbar navbar-expand-sm bg-light navbar-dark navbar-fixed-top">
+  <div class="container-fluid">
+    <nav
+      id="navbar_top"
+      class="navbar navbar-expand-sm bg-light navbar-dark navbar-fixed-top"
+    >
       <ul class="navbar-nav navbar-left">
         <li>
-          <h4 class="d-flex justify-content-center m-1">
+          <h5 display-5 class="d-flex justify-content-center m-1">
             {{ $t("profile.MyName") }}
-          </h4>
+          </h5>
         </li>
         <li>
-          <h4
+          <h5
+            display-5
             class="d-flex justify-content-center m-1 mx-2"
             style="color: blue"
           >
             {{ $t("message.MyYearExperience") }}
-          </h4>
+          </h5>
         </li>
+      </ul>
+      <ul class="navbar-nav navbar-left">
         <li class="nav-item">
-          <router-link class="btn btn-light btn-outline-primary m-1" to="/">{{
+          <router-link class="btn btn-light btn-outline-primary mx-1" to="/">{{
             $t("message.Profile")
           }}</router-link>
           <router-link
-            class="btn btn-light btn-outline-primary m-1"
+            class="btn btn-light btn-outline-primary mx-1"
             :to="{ name: 'skill' }"
             >{{ $t("message.MySkills") }}</router-link
           >
         </li>
         <li class="nav-item">
-          <button
-            type="button"
-            @click="this.DownloadResume"
-            class="btn btn-info"
+          <a
+            class="btn btn-secondary m-1 dense"
+            style="font-size: 10px"
+            target="_blank"
+            href="https://github.com/potatoscript/resume2-development/blob/master/ui/src/assets/Resume.pdf"
           >
-            {{ $t("message.Resume") }}
-          </button>
+            {{ $t("message.EnglishResume") }}
+          </a>
+          <a
+            class="btn btn-secondary dense my-1"
+            target="_blank"
+            style="font-size: 10px"
+            href="https://github.com/potatoscript/resume2-development/blob/master/ui/src/assets/履歴書.pdf"
+          >
+            {{ $t("message.JapaneseResume") }}
+          </a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto">
@@ -68,10 +83,34 @@
 <script>
 import axios from "axios";
 export default {
+  data() {
+    return {
+      navbar_height: 0,
+    };
+  },
+  mounted: function () {
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 2) {
+        document.getElementById("navbar_top").classList.add("fixed-top");
+        // add padding top to show content behind navbar
+        this.navbar_height = document.querySelector(".navbar").offsetHeight;
+        document.body.style.paddingTop = this.navbar_height + "px";
+      } else {
+        document.getElementById("navbar_top").classList.remove("fixed-top");
+        // remove padding top from body
+        document.body.style.paddingTop = "0";
+      }
+    });
+  },
   methods: {
     DownloadResume() {
       axios({
-        url: "assets/" + this.$t("message.Resume"), // File URL Goes Here
+        url:
+          "https://github.com/potatoscript/resume2-development/blob/master/ui/src/assets/Resume.pdf" +
+          this.$t("message.Resume"), // File URL Goes Here
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
         method: "GET",
         responseType: "blob",
       }).then((res) => {
