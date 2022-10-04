@@ -98,27 +98,27 @@
             <tbody>
               <tr>
                 <td>AutoCAD</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td>2D, 3D, VBA</td>
               </tr>
               <tr>
                 <td>Inventor</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td>2D, 3D, VBA</td>
               </tr>
               <tr>
                 <td>SolidWork</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td>2D, 3D</td>
               </tr>
               <tr>
                 <td>SolidEdge</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td>2D, 3D</td>
               </tr>
               <tr>
                 <td>CadCam</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
             </tbody>
@@ -144,57 +144,57 @@
             <tbody>
               <tr>
                 <td>GitHub</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>BitBucket</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>MS Offices</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>JIRA</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Confluence</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Slack</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td></td>
               </tr>
               <tr>
                 <td>SourceThree</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>PgAdmin</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Visual Studio</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Visual Studio Code</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>PostMan</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td></td>
               </tr>
             </tbody>
@@ -222,22 +222,22 @@
             <tbody>
               <tr>
                 <td>Windows</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Unix</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Android</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
               <tr>
                 <td>IOS</td>
-                <td>-</td>
+                <td style="text-align: center">-</td>
                 <td></td>
               </tr>
             </tbody>
@@ -268,27 +268,27 @@
             <tbody>
               <tr>
                 <td>Apache</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>IIS</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Node.js</td>
-                <td>〇</td>
-                <td></td>
+                <td style="text-align: center">〇</td>
+                <td>npm</td>
               </tr>
               <tr>
                 <td>Docker</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td>Create Image</td>
               </tr>
               <tr>
                 <td>Azure</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
             </tbody>
@@ -314,37 +314,37 @@
             <tbody>
               <tr>
                 <td>PostgreSQL</td>
-                <td>◎</td>
-                <td></td>
+                <td style="text-align: center">◎</td>
+                <td>SqlBuilder</td>
               </tr>
               <tr>
                 <td>MySQL</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Access</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td></td>
               </tr>
               <tr>
                 <td>SQLite</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Oracle</td>
-                <td>-</td>
+                <td style="text-align: center">-</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Reddit</td>
-                <td>-</td>
+                <td style="text-align: center">-</td>
                 <td></td>
               </tr>
               <tr>
                 <td>NoSQL</td>
-                <td>-</td>
+                <td style="text-align: center">-</td>
                 <td></td>
               </tr>
             </tbody>
@@ -375,77 +375,82 @@
             <tbody>
               <tr>
                 <td>C#</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>HTML, CSS</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>JavaScript</td>
-                <td>◎</td>
-                <td>HTML, CSS</td>
+                <td style="text-align: center">◎</td>
+                <td>Ajax Http Call</td>
               </tr>
               <tr>
                 <td>TypeScript</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
               <tr>
                 <td>VBA</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>PHP</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td>SQL Query</td>
               </tr>
               <tr>
                 <td>Java</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Git</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Android</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Swift</td>
-                <td>-</td>
+                <td style="text-align: center">-</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Python</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Ruby</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
               <tr>
                 <td>C, C++</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Objective-C</td>
-                <td>-</td>
+                <td style="text-align: center">-</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Kotlin</td>
-                <td>-</td>
+                <td style="text-align: center">-</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Perl</td>
-                <td>-</td>
+                <td style="text-align: center">-</td>
                 <td></td>
               </tr>
             </tbody>
@@ -471,62 +476,72 @@
             <tbody>
               <tr>
                 <td>ASP.NET CORE MVC</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Rails</td>
-                <td>△</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Laravel</td>
-                <td>-</td>
+                <td style="text-align: center">-</td>
                 <td></td>
               </tr>
               <tr>
                 <td>CakePHP</td>
-                <td>-</td>
+                <td style="text-align: center">-</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Struts</td>
-                <td>-</td>
+                <td style="text-align: center">-</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Chart.js</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>JQuery.js</td>
-                <td>◎</td>
+                <td style="text-align: center">◎</td>
                 <td></td>
               </tr>
               <tr>
                 <td>FusionChart.js</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Enchant.js</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Bootstrap.js</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Vue.js</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
                 <td></td>
               </tr>
               <tr>
                 <td>Vuetify.js</td>
-                <td>〇</td>
+                <td style="text-align: center">〇</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Angular.js</td>
+                <td style="text-align: center">△</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>React.js</td>
+                <td style="text-align: center">△</td>
                 <td></td>
               </tr>
             </tbody>

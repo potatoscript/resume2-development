@@ -187,11 +187,11 @@
             "3":"・IT部門と協力して、生産システムをサポート"
         },
         "Outcome5":{
-            "1":"・Created 10 over system to support the management on the information flow in the production",
-            "2": "like dashboard of daily production progress, tooling status, ",
-            "3": "defective status, man power and machine performance tracking system and so on",
-            "4": "・By the importing of the third party library like chart.js and jQuery.js",
-            "5": "the production input data was able to present in the beautiful chart format in the dashboard"},
+            "1":"・１０件以上製造向けのシステムを作成しました",
+            "2": "　製造見えるかシステム（在庫状況、出来上がり等）, ",
+            "3": "　不適合率、機械・作業員の作業率の監視システム",
+            "4": "・Chart.js及びjQuery.jsを利用して、製造結果をグラフで監視することができました。",
+            "5": ""},
         "Tools5":{
             "1":"・Solid Work",
             "2":"・JavaScript",
@@ -213,15 +213,15 @@
             "3":"2022年5月"
         },
         "JobScope6":{
-            "1":"・Create and Maintain the production system",
-            "2":"・Educate the local system engineer on C# and asp.net core MVC framework development skill"
+            "1":"・製造システムを改善維持する",
+            "2":"・現地のエンジニアを教育する（C#・ASP.NETの開発スキル）"
         },
         "Outcome6":{
-            "1":"・Created 3 system ",
-            "2":"  - Production Cost Estimation System",
-            "3":"  - Project Scheduling Management System",
-            "4":"  - Production Information Management System ",
-            "5":"・Educated one local system engineer on C# language"
+            "1":"・下記のシステムを作成しました ",
+            "2":"  - 生産見積計算システム",
+            "3":"  - タスク日程管理システム",
+            "4":"  - 製造情報管理システム",
+            "5":"・現地のエンジニアからシステムの作成が出来ました（C#・ASP.NETの開発）"
         },
         "Tools6":{
             "1":"・ASP.NET CORE MVC",
@@ -245,8 +245,10 @@
             "3":""
         },
         "JobScope7":{
-            "1":"・Maintaining the Hospital information management system",
-            "2":""
+            "1":"・病院情報管理システムの維持",
+            "2":"・仕様確認・実装・単体テスト・結合テスト",
+            "3":"・PullRequest確認",
+            "4":"・Azure Blob・function作成"
         },
         "Outcome7":{
             "1":" "

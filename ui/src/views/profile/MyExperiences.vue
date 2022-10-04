@@ -211,6 +211,9 @@
         <td>{{ $t("job.Location7") }}</td>
         <td>
           <p>{{ $t("job.JobScope7.1") }}</p>
+          <p>{{ $t("job.JobScope7.2") }}</p>
+          <p>{{ $t("job.JobScope7.3") }}</p>
+          <p>{{ $t("job.JobScope7.4") }}</p>
         </td>
         <td>
           <p>{{ $t("job.Outcome7.1") }}</p>

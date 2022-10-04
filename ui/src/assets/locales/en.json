@@ -70,7 +70,7 @@
             "1":"NAC",
             "2":"(NOK ASIA Company Singapore)"
         },
-        "Location1":"シンガポール",
+        "Location1":"Singapore",
         "Period1":{
             "1":"2000-APR",
             "2":"to",
@@ -247,7 +247,9 @@
         },
         "JobScope7":{
             "1":"・Maintaining the Hospital information management system",
-            "2":""
+            "2":"・Spec confirm, coding, testing",
+            "3":"・PullRequest Checking",
+            "4":"・Azure Blob・function Making"
         },
         "Outcome7":{
             "1":" "
