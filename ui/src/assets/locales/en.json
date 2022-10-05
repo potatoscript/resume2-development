@@ -2,6 +2,7 @@
     "message":{
         "MyCV": "Experience",
         "MySkills": "Skills",
+        "MySamples": "SSamples",
         "MyYearExperience" : "(10+ Years Experience Full Stack Developer)",
         "Profile":"Profile",
         "Education" : "Education",
@@ -23,6 +24,9 @@
         "Outcome":"Outcome",
         "Tools":"Tools",
         "Hobby":"Hobby",
+        "System":"System",
+        "SourceCode":"Code・Public Repository",
+        "Demo":"Deployed System",
         "Remark":"Remark",
         "Experiences":"Experiences",
         "Language":"Language",
@@ -274,6 +278,16 @@
     },
     "skill":{
         "remark":"◎：Advance ／ ○：Intermediate ／ △：Beginner"
+    },
+    "sample":{
+        "System1":"Work Load Management System",
+        "SourceCode1":"Vue.js + ASP.NET CORE API Source Code",
+        "Demo1":"Front End Demo System",
+        "Remark1":"Sample Appplication created by VUe.js as frontend and ASP.NET API as backend",
+        "System2":"Ruby on Rails Study Sample System",
+        "SourceCode2":"Ruby on Rails Source Code",
+        "Demo2":"Sample System that Deployed on Heroku",
+        "Remark2":"Under study"
     }
     
 }

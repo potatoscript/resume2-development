@@ -30,6 +30,11 @@
             :to="{ name: 'skill' }"
             >{{ $t("message.MySkills") }}</router-link
           >
+          <router-link
+            class="btn btn-light btn-outline-primary mx-1"
+            :to="{ name: 'sample' }"
+            >{{ $t("message.MySamples") }}</router-link
+          >
         </li>
         <li class="nav-item">
           <a
