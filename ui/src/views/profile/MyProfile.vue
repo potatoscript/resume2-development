@@ -35,15 +35,17 @@
               <span class="input-group-text" style="width: 100px">{{
                 $t("message.Email")
               }}</span>
-              <span class="form-control">{{ "limksmail@yahoo.co.jp" }}</span>
+              <span class="form-control">{{
+                $t("limksmail@yahoo.co.jp")
+              }}</span>
               <!--@cannot be used inside locale file-->
             </div>
           </td>
-          <td style="vertical-align: top" class="px-3">
-            <canvas id="locationChart" width="300" height="200"></canvas>
-          </td>
         </tr>
       </table>
+      <div class="px-3">
+        <canvas id="locationChart" width="300" height="200"></canvas>
+      </div>
     </div>
 
     <h7 class="display-8">{{ $t("profile.Other") }}</h7>

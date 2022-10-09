@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ProfileView from '../views/ProfileView.vue'
+import SkillView from '../views/SkillView.vue'
+import SampleView from '../views/SampleView.vue'
 const routes = [
   {
     path: '/',
@@ -9,13 +11,19 @@ const routes = [
   {
     path: '/skill',
     name: 'skill',
-    component: () => import('../views/SkillView.vue')
+    component: SkillView
+    // component: () => import('../views/SkillView.vue')
   },
   {
     path: '/sample',
     name: 'sample',
-    component: () => import('../views/SampleView.vue')
-  }
+    component: SampleView
+  },
+  {
+    path: '/codility',
+    name: 'codility',
+    component: () => import('../views/CodilityView.vue')
+  },
 ]
 
 const router = createRouter({

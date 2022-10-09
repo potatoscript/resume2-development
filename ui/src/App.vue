@@ -6,18 +6,44 @@
     >
       <ul class="navbar-nav navbar-left">
         <li>
-          <h5 display-5 class="d-flex justify-content-center m-1">
-            {{ $t("profile.MyName") }}
-          </h5>
-        </li>
-        <li>
-          <h5
-            display-5
-            class="d-flex justify-content-center m-1 mx-2"
-            style="color: blue"
-          >
-            {{ $t("message.MyYearExperience") }}
-          </h5>
+          <table>
+            <tr>
+              <td>
+                <h5 display-5 class="d-flex justify-content-center m-1">
+                  {{ $t("profile.MyName") }}
+                </h5>
+              </td>
+              <td>
+                <h5
+                  display-5
+                  class="d-flex justify-content-center m-1 mx-2"
+                  style="color: blue"
+                >
+                  {{ $t("message.MyYearExperience") }}
+                </h5>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <a
+                  class="btn btn-secondary m-1 dense"
+                  style="font-size: 10px"
+                  target="_blank"
+                  href="https://github.com/potatoscript/resume2-development/blob/master/ui/src/assets/Resume.pdf"
+                >
+                  {{ $t("message.EnglishResume") }}
+                </a>
+                <a
+                  class="btn btn-secondary dense my-1"
+                  target="_blank"
+                  style="font-size: 10px"
+                  href="https://github.com/potatoscript/resume2-development/blob/master/ui/src/assets/履歴書.pdf"
+                >
+                  {{ $t("message.JapaneseResume") }}
+                </a>
+              </td>
+            </tr>
+          </table>
         </li>
       </ul>
       <ul class="navbar-nav navbar-left">
@@ -35,24 +61,11 @@
             :to="{ name: 'sample' }"
             >{{ $t("message.MySamples") }}</router-link
           >
-        </li>
-        <li class="nav-item">
-          <a
-            class="btn btn-secondary m-1 dense"
-            style="font-size: 10px"
-            target="_blank"
-            href="https://github.com/potatoscript/resume2-development/blob/master/ui/src/assets/Resume.pdf"
+          <router-link
+            class="btn btn-light btn-outline-primary mx-1"
+            :to="{ name: 'codility' }"
+            >{{ $t("message.Codility") }}</router-link
           >
-            {{ $t("message.EnglishResume") }}
-          </a>
-          <a
-            class="btn btn-secondary dense my-1"
-            target="_blank"
-            style="font-size: 10px"
-            href="https://github.com/potatoscript/resume2-development/blob/master/ui/src/assets/履歴書.pdf"
-          >
-            {{ $t("message.JapaneseResume") }}
-          </a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto">

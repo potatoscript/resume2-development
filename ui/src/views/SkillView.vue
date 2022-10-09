@@ -1,22 +1,30 @@
 <template>
-  <div class="justify-content-center mx-5">
+  <div class="justify-content-center mx-2">
     <div class="input-group">
       <h5 class="display-7 mt-3">■ {{ $t("message.MySkills") }}</h5>
     </div>
     <table>
       <tr>
         <td style="vertical-align: top">
-          <div style="width: 350px; height: 300px" class="mb-5">
-            <canvas id="skillChart"></canvas>
+          <div class="input-group inline">
+            <div style="width: 350px; height: 300px" class="mb-5">
+              <canvas id="skillChart"></canvas>
+            </div>
+            <div style="width: 350px; height: 300px" class="mb-5">
+              <canvas id="skillCodeChart"></canvas>
+            </div>
           </div>
-        </td>
-        <td style="vertical-align: top" class="px-3">
-          <table class="table table-striped table-bordered mx-3">
+          <table
+            class="table table-striped table-bordered mx-3"
+            style="width: 90%"
+          >
             <thead class="table-dark">
               <tr>
                 <th>
                   <div class="input-group">
-                    <h5 display-7 class="m-1">{{ $t("message.Language") }}</h5>
+                    <h5 display-7 class="m-1">
+                      {{ $t("message.Language") }}
+                    </h5>
                   </div>
                 </th>
                 <th>
@@ -558,7 +566,8 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 export default {
   data() {
     return {
-      EnglishData: [70, 60, 70, 70, 70],
+      CodingSkillData: [90, 80, 70, 60, 50],
+      EnglishData: [70, 60, 60, 30, 60],
       JapaneseData: [70, 60, 60, 30, 60],
       ChineseData: [90, 80, 70, 30, 30],
       MalayData: [70, 40, 50, 30, 30],
@@ -566,6 +575,7 @@ export default {
   },
   mounted: function () {
     this.radarSkill();
+    this.radarCodeSkill();
   },
   methods: {
     radarSkill() {
@@ -663,6 +673,71 @@ export default {
         },
       };
       var ctx = document.getElementById("skillChart").getContext("2d");
+
+      Chart.register(ChartDataLabels);
+      var radarChart = new Chart(ctx, {
+        type: "radar",
+        data: marksData,
+        options: chartOptions,
+      });
+      radarChart;
+    },
+    radarCodeSkill() {
+      var marksData = {
+        labels: [
+          this.$t("JavaScript"),
+          this.$t("C#"),
+          this.$t("SQL"),
+          this.$t("Java"),
+          this.$t("PHP"),
+        ],
+        datasets: [
+          {
+            label: this.$t("language.Coding"),
+            backgroundColor: "transparent",
+            borderColor: "rgba(200,0,0,0.6)",
+            fill: false,
+            radius: 6,
+            pointRadius: 6,
+            pointBorderWidth: 3,
+            pointBackgroundColor: "orange",
+            pointBorderColor: "rgba(200,0,0,0.6)",
+            pointHoverRadius: 10,
+            data: this.CodingSkillData,
+          },
+        ],
+      };
+      var chartOptions = {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: false,
+            position: "left",
+          },
+        },
+        scales: {
+          r: {
+            //グラフの最小値・最大値
+            min: 0,
+            max: 100,
+            //背景色
+            backgroundColor: "snow",
+            //グリッドライン
+            grid: {
+              color: "pink",
+            },
+            //アングルライン
+            angleLines: {
+              color: "green",
+            },
+            //各項目のラベル
+            pointLabels: {
+              color: "blue",
+            },
+          },
+        },
+      };
+      var ctx = document.getElementById("skillCodeChart").getContext("2d");
 
       Chart.register(ChartDataLabels);
       var radarChart = new Chart(ctx, {

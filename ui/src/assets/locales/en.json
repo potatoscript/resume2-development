@@ -2,8 +2,8 @@
     "message":{
         "MyCV": "Experience",
         "MySkills": "Skills",
-        "MySamples": "SSamples",
-        "MyYearExperience" : "(10+ Years Experience Full Stack Developer)",
+        "MySamples": "My Works",
+        "MyYearExperience" : "(10 Years Experience Full Stack Developer)",
         "Profile":"Profile",
         "Education" : "Education",
         "English" : "English",
@@ -32,7 +32,9 @@
         "Language":"Language",
         "Resume":"Resume.pdf",
         "EnglishResume":"Resume.pdf",
-        "JapaneseResume":"履歴書.pdf"
+        "JapaneseResume":"履歴書.pdf",
+        "Date":"Date",
+        "Codility":"Codility"
     },
     "language":{
         "English":"English",
@@ -47,7 +49,8 @@
         "EnglishLabel":"English (Daily conversation level TOIEC 820)",
         "ChineseLabel":"Chinese (Daily conversation level)",
         "JapaneseLabel":"Japanese (Daily conversation level N2)",
-        "MalayLabel":"Malay (Daily conversation level)"
+        "MalayLabel":"Malay (Daily conversation level)",
+        "Coding":"Coding Language"
     },
     "country":{
         "YearOfLiving":"Year Of Living",
@@ -273,7 +276,7 @@
         }
     },
     "hobby":{
-        "1":"Learning new thing（Android、Python…）",
+        "1":"Learning new thing like Cloud,Android、Python… (Currently learning Ruby on Rails)",
         "2":"Swimming、water-color drawing"
     },
     "skill":{
@@ -284,10 +287,18 @@
         "SourceCode1":"Vue.js + ASP.NET CORE API Source Code",
         "Demo1":"Front End Demo System",
         "Remark1":"Sample Appplication created by VUe.js as frontend and ASP.NET API as backend",
-        "System2":"Ruby on Rails Study Sample System",
+        "System2":"",
         "SourceCode2":"Ruby on Rails Source Code",
         "Demo2":"Sample System that Deployed on Heroku",
-        "Remark2":"Under study"
+        "Remark2":"Rubby on Rails Application (Under studying)",
+        "System3":"QR Scanner Organizer",
+        "SourceCode3":"",
+        "Demo3":"QR Scanner Organizer",
+        "Remark3":"Android Application",
+        "System4":"Fruit Maching Puzzle Game",
+        "SourceCode4":"",
+        "Demo4":"Fruit Maching Puzzle Game",
+        "Remark4":"Android Application"
     }
     
 }

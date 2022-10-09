@@ -3,7 +3,7 @@
         "MyCV": "職務経歴",
         "MySkills": "ｽｷﾙｼｰﾄ",
         "MySamples": "作品",
-        "MyYearExperience" : "(経験年数 10+フルスタック開発者)",
+        "MyYearExperience" : "(経験:１０年フルスタック開発者)",
         "Profile":"基本情報",
         "Education":"最終学歴",
         "English" : "English",
@@ -32,7 +32,9 @@
         "Language":"言語",
         "Resume":"履歴書.pdf",
         "EnglishResume":"Resume.pdf",
-        "JapaneseResume":"履歴書.pdf"
+        "JapaneseResume":"履歴書.pdf",
+        "Date":"日付",
+        "Codility":"コーディング"
     },
     "language":{
         "English":"英語語",
@@ -47,7 +49,8 @@
         "EnglishLabel":"英語 (日常会話レベル TOIEC 820)",
         "ChineseLabel":"中国語 (日常会話レベル)",
         "JapaneseLabel":"日本語 (日常会話レベル N2)",
-        "MalayLabel":"マレーシア語 (日常会話レベル)"
+        "MalayLabel":"マレーシア語 (日常会話レベル)",
+        "Coding":"開発言語"
     },
     "country":{
         "YearOfLiving":"在住年数",
@@ -272,7 +275,7 @@
         }
     },
     "hobby":{
-        "1":"新し技術を学ぶ（Android、Python（機械学習）等）",
+        "1":"新し技術を学ぶ 例：Cloud, Android、Python機械学習等（今Ruby on Rails学び中）",
         "2":"水泳、水彩画、漫画"
     },
     "skill":{
@@ -282,10 +285,18 @@
         "System1":"業務管理システム",
         "SourceCode1":"Vue.js + ASP.NET CORE APIで開発したｺｰﾄﾞ",
         "Demo1":"GitHubに導入したシステム",
-        "Remark1":"VUe.js as frontend and ASP.NET API as backend",
-        "System2":"Ruby on Railsを勉強するためのシステム",
+        "Remark1":"Vue.js as frontend and ASP.NET API as backend",
+        "System2":"",
         "SourceCode2":"Ruby on Railsで開発したｺｰﾄﾞ",
         "Demo2":"Herokuに導入したシステム",
-        "Remark2":"Ruby On Rails 学び中"
+        "Remark2":"Ruby On Rails 学び中",
+        "System3":"QR Scanner Organizer",
+        "SourceCode3":"",
+        "Demo3":"QR Scanner Organizer",
+        "Remark3":"Android アプリケーション",
+        "System4":"Fruit Maching Puzzle Game",
+        "SourceCode4":"",
+        "Demo4":"Fruit Maching Puzzle Game",
+        "Remark4":"Android アプリケーション"
     }
 }

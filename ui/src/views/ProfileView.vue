@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="justify-content-center mx-2">
     <ul class="nav nav-tabs">
       <li class="nav-item" role="presentation">
         <a
