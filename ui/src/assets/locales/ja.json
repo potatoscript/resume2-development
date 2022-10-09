@@ -34,7 +34,10 @@
         "EnglishResume":"Resume.pdf",
         "JapaneseResume":"履歴書.pdf",
         "Date":"日付",
-        "Codility":"コーディング"
+        "Codility":"コーディング",
+        "Description":"タスク",
+        "Solution":"実装",
+        "Result":"評価"
     },
     "language":{
         "English":"英語語",

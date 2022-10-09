@@ -50,7 +50,10 @@
         "ChineseLabel":"Chinese (Daily conversation level)",
         "JapaneseLabel":"Japanese (Daily conversation level N2)",
         "MalayLabel":"Malay (Daily conversation level)",
-        "Coding":"Coding Language"
+        "Coding":"Coding Language",
+        "Description":"Description",
+        "Solution":"Solution",
+        "Result":"Result"
     },
     "country":{
         "YearOfLiving":"Year Of Living",
