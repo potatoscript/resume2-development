@@ -34,7 +34,10 @@
         "EnglishResume":"Resume.pdf",
         "JapaneseResume":"履歴書.pdf",
         "Date":"Date",
-        "Codility":"Codility"
+        "Codility":"Codility",
+        "Description":"Description",
+        "Solution":"Solution",
+        "Result":"Result"
     },
     "language":{
         "English":"English",
@@ -51,9 +54,7 @@
         "JapaneseLabel":"Japanese (Daily conversation level N2)",
         "MalayLabel":"Malay (Daily conversation level)",
         "Coding":"Coding Language",
-        "Description":"Description",
-        "Solution":"Solution",
-        "Result":"Result"
+        "Codility":"Coding Test"
     },
     "country":{
         "YearOfLiving":"Year Of Living",

@@ -53,7 +53,8 @@
         "ChineseLabel":"中国語 (日常会話レベル)",
         "JapaneseLabel":"日本語 (日常会話レベル N2)",
         "MalayLabel":"マレーシア語 (日常会話レベル)",
-        "Coding":"開発言語"
+        "Coding":"開発言語",
+        "Codility":"コーディング受験"
     },
     "country":{
         "YearOfLiving":"在住年数",
