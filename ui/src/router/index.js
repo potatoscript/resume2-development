@@ -9,18 +9,18 @@ const routes = [
     component: ProfileView
   },
   {
-    path: '/skill',
+    path: '/',
     name: 'skill',
     component: SkillView
     // component: () => import('../views/SkillView.vue')
   },
   {
-    path: '/sample',
+    path: '/',
     name: 'sample',
     component: SampleView
   },
   {
-    path: '/codility',
+    path: '/',
     name: 'codility',
     component: () => import('../views/CodilityView.vue')
   },

@@ -19,30 +19,7 @@
                   color: white;
                 "
               >
-    TASK 2: 2022-10-09 (hard)
-
-    You analyze the performance of a computer network. 
-    The network comprises nodes connected by peer-to-peer links. 
-    There are N links and N + 1 nodes. 
-    All pairs of nodes are (directly or indirectly) connected by links, 
-    and links don't form cycles. In other words, 
-    the network has a tree topology.
-
-    Your analysis shows that communication between two nodes 
-    performs much better if the number of links on the (shortest) route 
-    between the nodes is odd. Of course, the communication is fastest 
-    when the two nodes are connected by a direct link. 
-    But, amazingly, if the nodes communicate via 3, 5, 7, etc. links, 
-    communication is much faster than if the number of links to pass is even.
-
-    Now you wonder how this influences the overall network performance. 
-    There are N * (N + 1) / 2 different pairs of nodes. 
-    You need to compute how many of them are pairs of nodes 
-    connected via an odd number of links.
-
-    Nodes are numbered from 0 to N. Links are described by two arrays of integers,
-    A and B, each containing N integers. 
-    For each 0 ≤ I ＜ N, there is a link between nodes A[I] and B[I].
+    TASK 5: 2022-10-09 (hard)
 
     Write a function:
 
@@ -109,7 +86,7 @@
                 cols="55"
                 style="text-align: left; font-size: 13px; height: 280px"
               >
-    SOLUTION 2: 
+    SOLUTION 5: 
 
     function solution(N) {
         // thinking...
@@ -132,20 +109,64 @@
                   color: white;
                 "
               >
-    TASK 1: 2022-10-08 (easy)
+    TASK 4: 2022-10-08 (easy)
 
-    A binary gap within a positive integer N is any maximal
-    sequence of consecutive zeros that is surrounded by ones at both
-    ends in the binary representation of N.
+    Write a function: function solution(N);
 
-    For example, number 9 has binary representation 1001 and 
-    contains a binary gap of length 2. The number 529 has binary 
-    representation 1000010001 and contains
-    two binary gaps: one of length 4 and one of length 3. 
-    The number 20 has binary representation 10100 and contains one
-    binary gap of length 1. 
-    The number 15 has binary representation 1111 and has no binary gaps. 
-    The number 32 has binary representation 100000 and has no binary gaps.
+    that, given a string N, returns N in CamelCase. 
+
+    For example, given N = "I am-bruce!! nice to@ meet you"; 
+    the function should return "iAmBruceNiceToMeetYou".
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+    SOLUTION 4: 2022-10-08 (15mins)
+
+    function CamelCase(N){
+        var regEx = /^[0-9a-zA-Z]+$/;
+        var N = N.split("");
+        var str = N[0].toLowerCase();
+        for(var i=1; i ＜ N.length; i++){
+            if(N[i].match(regEx) && N[i]!=" ")
+            {
+            str+=N[i].toLowerCase(); 
+            }
+            else
+            {
+                if(N[i+1].match(regEx)){
+                    str+=N[i+1].toUpperCase();
+                    i++;
+                }
+                
+            }
+        }
+        return str;
+    }
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
+    TASK 3: 2022-10-08 (easy)
 
     Write a function: function solution(N);
 
@@ -170,7 +191,7 @@
                 cols="55"
                 style="text-align: left; font-size: 13px; height: 280px"
               >
-    SOLUTION 1: 2022-10-08 (15mins)
+    SOLUTION 3: 2022-10-08 (15mins)
 
     function solution(N) {
         var binary = (N >>> 0).toString(2);
@@ -186,6 +207,120 @@
         if(b==1)binaryGap.push(n),n=0;
         })
         return Math.max.apply(null, binaryGap);
+    }
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
+    TASK 2: 2022-10-07 (easy)
+
+    Write a function: function solution(a,b,k);
+
+    that, given a range of positive integer a to b and division number k, 
+    returns the number of division of k
+
+    For example, given a = 1, b = 10 and k = 3 the function should return 3,
+    because range of a,b = 1,2,3,4,5,6,7,8,9,10 which 3,6,9 can be divider by k
+
+    Write an efficient algorithm for the following
+    assumptions: b is an integer within the range 1..2,147,483,647.
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+    SOLUTION 2: 2022-10-07 (15mins)
+
+    // Poor solution: time complexity = Linear time – O(n)
+    function solution(a,b,k) {
+       var n = 0;
+       var arry = [];
+       for(var i=a; i＜=b; i++){
+           if(i%k==0)arry.push(i),n++;
+       }
+       console.log(arry)
+       return n;
+    }
+
+    // Good Solution: time complexity = Constant time – O (1)
+    function solution(a,b,k) {
+      if(a%k==0)return Math.floor(((b-a)/k+1))
+      if(a%k>0)return Math.floor((b-(a-a%k))/k)
+    }
+
+
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
+    TASK 1: 2022-10-06 (easy)
+
+    Write a function: function solution(N[]);
+
+    that, given an array N of set of integer values, 
+    returns the smaller missing integer in the array
+
+    For example, given N = [1,5,3,6,9] the function should return 4,
+    because 4 is the smallest missing integer in N
+
+    Write an efficient algorithm for the following
+    assumptions: N within the range 1..2,147,483,647.
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+    SOLUTION 1: 2022-10-06 (15mins)
+
+    function solution(N) {
+        var min = Math.min.apply(null, N);
+        var max =  Math.max.apply(null, N);
+        if(max＜0)return 1;
+
+        N.sort(function(b,a){return b-a});
+
+        for(var key in N) {
+            var value = N[key]+1;
+            if(!N.includes(value) ＆＆ value>0){
+                return value;
+            }
+        }
     }
               </textarea>
             </div>
