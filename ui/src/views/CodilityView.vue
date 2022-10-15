@@ -19,6 +19,302 @@
                   color: white;
                 "
               >
+    TASK 9: 2022-10-12 (easy)
+
+    A non-empty array A consisting of N integers is given. The consecutive elements of array A represent consecutive cars on a road.
+
+    Array A contains only 0s and/or 1s:
+
+    0 represents a car traveling east,
+    1 represents a car traveling west.
+    The goal is to count passing cars. We say that a pair of cars (P, Q), where 0 ≤ P ＜ Q ＜ N, is passing when P is traveling to the east and Q is traveling to the west.
+
+    For example, consider array A such that:
+
+    A[0] = 0
+    A[1] = 1
+    A[2] = 0
+    A[3] = 1
+    A[4] = 1
+    We have five pairs of passing cars: (0, 1), (0, 3), (0, 4), (2, 3), (2, 4).
+
+    Write a function:
+
+    class Solution { public int solution(int[] A); }
+
+    that, given a non-empty array A of N integers, returns the number of pairs of passing cars.
+
+    The function should return −1 if the number of pairs of passing cars exceeds 1,000,000,000.
+
+    For example, given:
+
+    A[0] = 0
+    A[1] = 1
+    A[2] = 0
+    A[3] = 1
+    A[4] = 1
+    the function should return 5, as explained above.
+
+    Write an efficient algorithm for the following assumptions:
+
+    N is an integer within the range [1..100,000];
+    each element of array A is an integer that can have one of the following values: 0, 1.
+
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+    SOLUTION 9: 2022-10-15 (18mins 100%) 
+    Detected time complexity: O(N)
+
+    function solution(A) {
+        var n = 0;
+        var c = [];
+        if(!A.includes(0))return 0;
+        if(!A.includes(1))return 0;
+        for(var i=0; i＜A.length; i++ ){
+            if(A[i]==0)c.push(0);
+            if(A[i]!=0 && c.includes(0)){
+                n += c.length;
+            }
+        }
+        if(n>1000000000)return -1;
+        return n;
+    }
+
+    SOLUTION 9: 2022-10-14 (15mins 50%) 
+    Detected time complexity: O(N**2) and wrong answer
+
+    function solution(A) {
+        var n = 0;
+        var c = [];
+        for(var i=0; i＜A.length; i++ ){
+            if(A[i]!=0 && c.includes(0)){
+                for(var j=0; j＜c.length;j++){
+                    n++;
+                }
+            }else{
+                c.push(0)
+            }
+        }
+
+        return n;
+    }
+
+    SOLUTION 9: 2022-10-12 (25mins 60%) 
+    Detected time complexity: O(N**2)
+
+    function solution(A) {
+        var n = 0;
+        for(var i=0; i＜A.length; i++ ){
+            if(A[i]==0){
+                for(var j=i+1; j＜A.length; j++ ){
+                    if(A[j]==1){
+                        n++;
+                    }
+                }
+            }
+        }
+        return n;
+    }
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
+    TASK 8: 2022-10-11 (easy)
+
+    Write a function:
+
+    class Solution { public int solution(int X, int Y, int D); }
+
+    that, given three integers X, Y and D, 
+    returns the minimal number of jumps from position X to 
+    a position equal to or greater than Y.
+
+    For example, given:
+
+    X = 10
+    Y = 85
+    D = 30
+    the function should return 3, because the frog will be positioned as follows:
+
+    after the first jump, at position 10 + 30 = 40
+    after the second jump, at position 10 + 30 + 30 = 70
+    after the third jump, at position 10 + 30 + 30 + 30 = 100
+    Write an efficient algorithm for the following assumptions:
+
+    X, Y and D are integers within the range [1..1,000,000,000];
+    X ≤ Y.
+
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+    SOLUTION 8: 2022-10-11 (25mins 100%)
+
+    function solution(X, Y, D) {
+        var T = (Y-X)/D;
+        return Math.ceil(T);
+    }
+
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
+    TASK 7: 2022-10-11 (easy)
+
+    Write a function:
+
+    class Solution { public int[] solution(int[] A, int K); }
+
+    that, given an array A consisting of N integers and an integer K, 
+    returns the array A rotated K times.
+
+    For example, given
+
+        A = [3, 8, 9, 7, 6]
+        K = 3
+    the function should return [9, 7, 6, 3, 8]. Three rotations were made:
+
+        [3, 8, 9, 7, 6] -> [6, 3, 8, 9, 7]
+        [6, 3, 8, 9, 7] -> [7, 6, 3, 8, 9]
+        [7, 6, 3, 8, 9] -> [9, 7, 6, 3, 8]
+    For another example, given
+
+        A = [0, 0, 0]
+        K = 1
+    the function should return [0, 0, 0]
+
+    Given
+
+        A = [1, 2, 3, 4]
+        K = 4
+    the function should return [1, 2, 3, 4]
+
+    Assume that:
+
+    N and K are integers within the range [0..100];
+    each element of array A is an integer within the range [−1,000..1,000].
+
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+    SOLUTION 7: 2022-10-11 (25mins 100%)
+
+    function solution(A, K) {
+        for(var i=0;i＜K;i++){
+           A.unshift(A[A.length-1]);
+           A.pop();
+        }
+        return A;
+    }
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
+    TASK 6: 2022-10-11 (easy)
+
+    Write a function: function solution(N[]);
+
+    that, return fibonacci
+
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+    SOLUTION 6: 2022-10-11 (15mins)
+
+    function solution(n) {
+        if (n === 0) {
+            return 0;
+        } else if (n === 1) {
+            return 1;
+        } else {
+            return this.fibonacci(n - 1) +
+                this.fibonacci(n - 2);
+        }
+    }
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
     TASK 5: 2022-10-09 (hard)
 
     Write a function:
@@ -84,7 +380,12 @@
                 class="mx-3"
                 rows="4"
                 cols="55"
-                style="text-align: left; font-size: 13px; height: 280px"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: lightpink;
+                "
               >
     SOLUTION 5: 
 

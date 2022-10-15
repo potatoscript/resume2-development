@@ -7,10 +7,10 @@
       <tr>
         <td style="vertical-align: top">
           <div class="input-group inline">
-            <div style="width: 350px; height: 300px" class="mb-5">
+            <div style="width: 350px; height: 300px" class="mb-2">
               <canvas id="skillChart"></canvas>
             </div>
-            <div style="width: 350px; height: 300px" class="mb-5">
+            <div style="width: 300px; height: 280px" class="my-2">
               <canvas id="skillCodeChart"></canvas>
             </div>
           </div>
