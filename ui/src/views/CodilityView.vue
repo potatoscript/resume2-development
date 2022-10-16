@@ -19,6 +19,138 @@
                   color: white;
                 "
               >
+    TASK 10: 2022-10-16 (easy)
+
+    A non-empty array A consisting of N integers is given. 
+    The array contains an odd number of elements, 
+    and each element of the array can be paired with another element that has the same value, 
+    except for one element that is left unpaired.
+
+    For example, in array A such that:
+
+    A[0] = 9  A[1] = 3  A[2] = 9
+    A[3] = 3  A[4] = 9  A[5] = 7
+    A[6] = 9
+    the elements at indexes 0 and 2 have value 9,
+    the elements at indexes 1 and 3 have value 3,
+    the elements at indexes 4 and 6 have value 9,
+    the element at index 5 has value 7 and is unpaired.
+    Write a function:
+
+    function solution(A);
+
+    that, given an array A consisting of N integers 
+    fulfilling the above conditions, returns the value of the unpaired element.
+
+    For example, given array A such that:
+
+    A[0] = 9  A[1] = 3  A[2] = 9
+    A[3] = 3  A[4] = 9  A[5] = 7
+    A[6] = 9
+    the function should return 7, as explained in the example above.
+
+    Write an efficient algorithm for the following assumptions:
+
+    N is an odd integer within the range [1..1,000,000];
+    each element of array A is an integer within the range [1..1,000,000,000];
+    all but one of the values in A occur an even number of times.
+
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+    SOLUTION 10: 2022-10-17 (15mins 100%)
+    Detected time complexity:O(N) or O(N*log(N))
+
+    function solution(A) {
+        const B = {}
+        A.forEach(element => {
+            B[element] = (B[element] || 0) + 1;
+        });
+        for (var key in B) {
+            if(B[key]%2!=0){
+                return parseInt(key)
+            }
+        }
+        return 0;
+    }
+
+    SOLUTION 10: 2022-10-16 (15mins 66%)
+    Detected time complexity: O(N**2)
+      Killed. Hard limit reached: 6.000 sec
+
+    function solution(A) {
+        const counts = {}
+        var d = [...A];
+        var odd = 0;
+        A.forEach(element => {
+            d.shift();  
+            counts[element] = (counts[element] || 0) + 1;   
+            if(counts[element]%2!=0 && !d.includes(element)){
+                odd = element
+            }
+        });
+        return odd;
+    }
+
+    SOLUTION 10: 2022-10-16 (15mins 66%)
+    Detected time complexity: O(N**2)
+      splice() is several orders of magnitude slower than a for loop 
+      iterating through the elements.
+
+    function solution(A) {
+        var c = [];
+        for(var i=0; i＜A.length; i++){
+            if(!c.includes(A[i])){
+                c.push(A[i]);
+            }else{
+                c.splice(c.indexOf(A[i]), 1)
+            }
+        }
+        if(c && c[0]!= undefined)return c[0];
+        return 0;
+    }
+
+
+    SOLUTION 10: 2022-10-16 (25mins 50%)
+    Detected time complexity: O(N**2)
+    and undefined return found
+
+    function solution(A) {
+        var c = []
+        var d = []
+        for(var i=0; i＜A.length; i++){
+            if(c.includes(A[i])){
+                d.push(A[i])
+            }else{
+                c.push(A[i])
+            }
+        }
+        return c.filter(x => !d.includes(x))[0]
+    }
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
     TASK 9: 2022-10-12 (easy)
 
     A non-empty array A consisting of N integers is given. The consecutive elements of array A represent consecutive cars on a road.
