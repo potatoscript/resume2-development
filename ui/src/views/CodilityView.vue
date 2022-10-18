@@ -19,6 +19,125 @@
                   color: white;
                 "
               >
+    TASK 11: 2022-10-19 (easy) PermMissingElem
+
+    Your goal is to find that missing element.
+
+    Write a function:
+
+    function solution(A);
+
+    that, given an array A, returns the value of the missing element.
+
+    For example, given array A such that:
+
+    A[0] = 2
+    A[1] = 3
+    A[2] = 1
+    A[3] = 5
+    the function should return 4, as it is the missing element.
+
+    Write an efficient algorithm for the following assumptions:
+
+    N is an integer within the range [0..100,000];
+    the elements of A are all distinct;
+    each element of array A is an integer within the range [1..(N + 1)].
+
+
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+    SOLUTION 10: 2022-10-17 (3mins 80%) 
+    Detected time complexity: O(N) or O(N * log(N)) or O(N ** 2)
+    due to array.sort()
+
+    function solution(A) {
+        var min = Math.min.apply(null, A);
+        if(min==2)return 1;
+        if(A.length==0)return 1;
+        A.sort(function(b,a){return b-a});
+        for(var key in A) {
+            var value = A[key]+1;
+            if(!A.includes(value) && value>0){
+                return value;
+            }
+        }
+    }
+
+
+
+    SOLUTION 10: 2022-10-17 (8mins 70%) 
+    detected: runtime errors, timeout errors. and
+    Invalid result type, integer expected, 'undefined' found
+    Perhaps you are missing a 'return'?
+
+    function solution(A) {
+        var min = Math.min.apply(null, A);
+        if(min==2)return 1;
+        A.sort(function(b,a){return b-a});
+        for(var key in A) {
+            var value = A[key]+1;
+            if(!A.includes(value) && value>0){
+                return value;
+            }
+        }
+    }
+
+
+    SOLUTION 10: 2022-10-17 (28mins 20%) 
+    Got Wrong answer and TIme out
+
+    function solution(A) {
+        var min = Math.min.apply(null, A);
+        var max = Math.max.apply(null, A);
+        for(var key in A) {
+            var value = max-A[key];
+            if(!A.includes(value)){
+                return value;
+            }
+        }
+    }
+
+
+    SOLUTION 10: 2022-10-17 (15mins 50%) 
+    Got Wrong answer and TIme out
+
+    function solution(A) {
+        var min = Math.min.apply(null, A);
+        var max = Math.max.apply(null, A);
+        if(max＜0)return 1;
+        A.sort(function(b,a){return b-a});
+        for(var key in A) {
+            var value = A[key]+1;
+            if(!A.includes(value) && value>0){
+                return value;
+            }
+        }
+    }
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
     TASK 10: 2022-10-16 (easy) OddOccurrencesInArray
 
     A non-empty array A consisting of N integers is given. 
