@@ -19,7 +19,7 @@
                   color: white;
                 "
               >
-    TASK 10: 2022-10-16 (easy)
+    TASK 10: 2022-10-16 (easy) OddOccurrencesInArray
 
     A non-empty array A consisting of N integers is given. 
     The array contains an odd number of elements, 

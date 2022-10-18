@@ -1,6 +1,7 @@
 {
     "message":{
-        "MyCV": "職務経歴",
+        "CurriculumVitae":"職務経歴書",
+        "MyCV": "履歴書",
         "MySkills": "ｽｷﾙｼｰﾄ",
         "MySamples": "作品",
         "MyYearExperience" : "(経験:１０年フルスタック開発者)",
