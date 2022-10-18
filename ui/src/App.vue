@@ -42,13 +42,13 @@
                   {{ $t("message.JapaneseResume") }}
                 </a>
                 <a
-                  class="btn btn-secondary dense my-1"
+                  class="btn btn-secondary dense my-1 mx-1"
                   target="_blank"
                   style="font-size: 10px"
                   href="https://github.com/potatoscript/resume2-development/blob/master/ui/src/assets/職務経歴書.doc"
                 >
-                  {{ $t("message.CurriculumVitae") }} </a
-                >v
+                  {{ $t("message.CurriculumVitae") }}
+                </a>
               </td>
             </tr>
           </table>
