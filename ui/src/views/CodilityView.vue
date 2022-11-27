@@ -19,6 +19,373 @@
                   color: white;
                 "
               >
+    TASK 14: 2022-11-01 (easy) PermCheck
+
+    A non-empty array A consisting of N integers is given.
+
+    A permutation is a sequence containing each element from 1 to N once, and only once.
+
+    For example, array A such that:
+
+        A[0] = 4
+        A[1] = 1
+        A[2] = 3
+        A[3] = 2
+    is a permutation, but array A such that:
+
+        A[0] = 4
+        A[1] = 1
+        A[2] = 3
+    is not a permutation, because value 2 is missing.
+
+    The goal is to check whether array A is a permutation.
+
+    Write a function:
+
+    function solution(A);
+
+    that, given an array A, returns 1 if array A is a permutation and 0 if it is not.
+
+    For example, given array A such that:
+
+        A[0] = 4
+        A[1] = 1
+        A[2] = 3
+        A[3] = 2
+    the function should return 1.
+
+    Given array A such that:
+
+        A[0] = 4
+        A[1] = 1
+        A[2] = 3
+    the function should return 0.
+
+    Write an efficient algorithm for the following assumptions:
+
+    N is an integer within the range [1..100,000];
+    each element of array A is an integer within the range [1..1,000,000,000].
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+
+    SOLUTION 14(2): 2022-11-01 (10mins 58%)
+    ・The following issues have been detected: 
+       wrong answers, timeout errors.
+    ・Detected time complexity: O(N ** 2)
+    
+
+    function solution(A) {
+        // write your code in JavaScript (Node.js 14)
+        // get the min value
+        var n = Math.min.apply(null, A)
+        // get the max value
+        var m = Math.max.apply(null, A)
+        
+        // if got single 1 value
+        if(m == 1 && A.length == 1) return 1
+
+        // if all the values was same
+        if(m == n) return 0
+
+        // if the min values not permutation
+        if(n > 1) return 0
+
+        for(var i=0;i＜A.length;i++){
+            // if reached the max value return 1
+            if(n == m)return 1
+
+            if(!A.includes(n))return 0
+
+            n++
+        }
+        return 1
+    } 
+
+    SOLUTION 14: 2022-11-01 (30mins 16%) 
+    ・The following issues have been detected:
+        wrong answers, timeout errors.
+      For example, for the input [2] 
+      the solution returned a wrong answer (got 1 expected 0).
+
+    function solution(A) {
+    // get the min value
+    var n = Math.min.apply(null, A)
+    // get the max value
+    var m = Math.max.apply(null, A)
+    
+    // if all the values was same
+    if(n == m) return 0
+
+    for(var i=0;i＜A.length;i++){
+        // if reached the max value return 1
+        if(n == m)return 1
+
+        if(!A.includes(n))return 0
+
+        n++
+    }
+    return 1
+}
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
+    TASK 13: 2022-10-24 (easy) 
+
+    The goal is to find the earliest time when the frog can jump to 
+    the other side of the river. 
+    The frog can cross only when leaves appear at every position across 
+    the river from 1 to X 
+    (that is, we want to find the earliest moment when all the positions 
+    from 1 to X are covered by leaves). 
+    You may assume that the speed of the current in the river is negligibly small, 
+    i.e. the leaves do not change their positions once they fall in the river.
+
+    For example, you are given integer X = 5 and array A such that:
+
+      A[0] = 1
+      A[1] = 3
+      A[2] = 1
+      A[3] = 4
+      A[4] = 2
+      A[5] = 3
+      A[6] = 5
+      A[7] = 4
+    In second 6, a leaf falls into position 5. 
+    This is the earliest time when leaves appear in every position 
+    across the river.
+
+    Write a function:
+
+    function solution(X, A);
+
+    that, given a non-empty array A consisting of N integers 
+    and integer X, 
+    returns the earliest time when the frog can jump to the 
+    other side of the river.
+
+    If the frog is never able to jump to the other side of the river, 
+    the function should return −1.
+
+    For example, given X = 5 and array A such that:
+
+      A[0] = 1
+      A[1] = 3
+      A[2] = 1
+      A[3] = 4
+      A[4] = 2
+      A[5] = 3
+      A[6] = 5
+      A[7] = 4
+    the function should return 6, as explained above.
+
+    Write an efficient algorithm for the following assumptions:
+
+    N and X are integers within the range [1..100,000];
+    each element of array A is an integer within the range [1..X].
+
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+    SOLUTION 13: 2022-10-24 (20mins )
+
+    function solution(X, A) {
+      if(!A.includes(X)) return -1;
+      if(X＜1) return -1;
+
+      // position array
+      var position = []
+      for(var i=0; i＜A.length; i++){
+          if(!position.includes(A[i])){
+              position.push(A[i])
+          }
+      }
+      // check the A
+      for(var i=0; i＜A.length; i++){
+          if(position.includes(A[i])){
+              const index = position.indexOf(A[i]);
+              position.splice(index,1)
+              if(position.length==0){
+                  return i
+              }
+          }
+      }
+  }
+  
+
+    SOLUTION 13: 2022-10-24 (40mins 84%) 
+    ・Detected time complexity: O(N)
+    ・extreme_frog frog never across the river
+      ✘RUNTIME ERROR
+
+    function solution(X, A) {
+        if(!A.includes(X)) return -1;
+
+        // position array
+        var position = []
+        for(var i=1;i＜=X;i++){
+            position.push(i)
+        }
+        // check the A
+        for(var i=0; i＜A.length; i++){
+            if(position.includes(A[i])){
+                const index = position.indexOf(A[i]);
+                position.splice(index,1)
+                if(position.length==0){
+                    return i
+                }
+            }
+        }
+    }
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
+    TASK 12: 2022-10-22 (easy) TapeEquilibrium
+
+    it is the absolute difference between the sum of the first part and the sum of the second part.
+
+    For example, consider array A such that:
+
+    A[0] = 3
+    A[1] = 1
+    A[2] = 2
+    A[3] = 4
+    A[4] = 3
+    We can split this tape in four places:
+
+    P = 1, difference = |3 − 10| = 7
+    P = 2, difference = |4 − 9| = 5
+    P = 3, difference = |6 − 7| = 1
+    P = 4, difference = |10 − 3| = 7
+    Write a function:
+
+    function solution(A);
+
+    that, given a non-empty array A of N integers, returns the minimal difference that can be achieved.
+
+    For example, given:
+
+    A[0] = 3
+    A[1] = 1
+    A[2] = 2
+    A[3] = 4
+    A[4] = 3
+    the function should return 1, as explained above.
+
+    Write an efficient algorithm for the following assumptions:
+
+    N is an integer within the range [2..100,000];
+    each element of array A is an integer within the range [−1,000..1,000].
+
+
+            </textarea
+              >
+
+              <textarea
+                class="mx-3"
+                rows="4"
+                cols="55"
+                style="text-align: left; font-size: 13px; height: 280px"
+              >
+    SOLUTION 12: 2022-10-22 (35mins 84%) 
+    ・Detected time complexity: O(N)
+    ・Two wrong answers 
+        1. two elements✘WRONG ANSWER
+            got 0 expected 2000
+        2. small elements✘WRONG ANSWER
+            got 0 expected 20
+
+    function solution(arr) {
+        var leftSum = 0; // sum from 0 to P
+        var rightSum = arr.reduce((a, b) => a + b, 0); // sum from P to N
+        var min = Math.abs(leftSum - rightSum); // initial value for p=0
+        for (var p = 0; p ＜ arr.length; p++){
+            // move the element from the right to the left side
+            leftSum += arr[p];
+            rightSum -= arr[p];
+            // then update minimum difference
+            min = Math.min(min, Math.abs(leftSum - rightSum));
+        }
+        return min;
+    }
+
+
+    SOLUTION 12: 2022-10-22 (65mins 38%) 
+    Got Wrong answer and TIme out 
+    Detected time complexity: O(N * N)
+
+    function solution(A) {
+        var B = [];
+        const C = [...A];
+        var v = 0;
+        for(var i=0; i＜A.length; i++){
+            v += A[i]
+            C.shift()
+            var D = C.reduce(function(acc, val) { return acc + val; }, -v)
+            B.push(Math.abs(D)) 
+        }
+        return Math.min(...B)
+    }
+              </textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-group">
+              <textarea
+                rows="4"
+                cols="80"
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  height: 280px;
+                  background: black;
+                  color: white;
+                "
+              >
     TASK 11: 2022-10-19 (easy) PermMissingElem
 
     Your goal is to find that missing element.
@@ -53,7 +420,7 @@
                 cols="55"
                 style="text-align: left; font-size: 13px; height: 280px"
               >
-    SOLUTION 10: 2022-10-17 (3mins 80%) 
+    SOLUTION 11: 2022-10-17 (3mins 80%) 
     Detected time complexity: O(N) or O(N * log(N)) or O(N ** 2)
     due to array.sort()
 
@@ -70,9 +437,7 @@
         }
     }
 
-
-
-    SOLUTION 10: 2022-10-17 (8mins 70%) 
+    SOLUTION 11: 2022-10-17 (8mins 70%) 
     detected: runtime errors, timeout errors. and
     Invalid result type, integer expected, 'undefined' found
     Perhaps you are missing a 'return'?
@@ -90,7 +455,7 @@
     }
 
 
-    SOLUTION 10: 2022-10-17 (28mins 20%) 
+    SOLUTION 11: 2022-10-17 (28mins 20%) 
     Got Wrong answer and TIme out
 
     function solution(A) {
@@ -105,7 +470,7 @@
     }
 
 
-    SOLUTION 10: 2022-10-17 (15mins 50%) 
+    SOLUTION 11: 2022-10-17 (15mins 50%) 
     Got Wrong answer and TIme out
 
     function solution(A) {
